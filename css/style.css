@@ -32,6 +32,12 @@ vertical-align: top;
     height: 50px;
 }
 
+.contact h2{
+
+    display: none;
+
+}
+
 tr td {
     text-align: right;
 
@@ -40,3 +46,4 @@ tr td {
 tr td td {
     text-align: left;
 }
+

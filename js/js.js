@@ -12,13 +12,23 @@ $(document).ready(function(){
         //console.log(first);
         var last = $('#lastName').val();
         //console.log(last);
-        $('#contactcard').append('<div class="contact"><button id="togglecontact">x</button><h1>' + first + " " + last + '</h1></div>')
+        var desc = $('#description').val();
+        $('#contactcard').append('<div class="contact"><h1>'
+         + first + " " + last + '</h1>' +
+            '<h2>' + desc + '</h2></div>');
+        
             console.log("qwerqewrqerqewr");
     })
 
-    $(document).on('click', '#refresh', function(){
-        $('#togglecontact').click(function(){
-                $('.contact').toggle();})  
-    })
-    ///////////////////////////////////////////////////////////////////////a
+  
+
+    $(document).on('click', '.contact', function(){
+       $(this).children().toggle();
+      
+
+
+    })  
+
+
+    ////////////(///////////////////////////////////////////////////////////a
 })
